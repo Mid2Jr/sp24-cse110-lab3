@@ -1,43 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Document</title>
+    <title>Meeting Minute 1</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Meeting Minutes" />
+    <meta name="keywords" content="HTML" />
+    <meta name="author" content="Daniel Luo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.png" />
   </head>
-  <body>
-    <h1>First Meeting Minute</h1>
-    <h3>Date: 4/12/2024</h3>
-    <h3>Attendence</h3>
-    <ul>
-      <li>Daniel</li>
-      <li>John</li>
-      <li>Sarah</li>
-      <li>David</li>
-    </ul>
-    <h3>Location</h3>
-    <p>UCSD Price Center</p>
+  <main>
+    <body>
+      <header>
+        <h1><span style="color: red">First Meeting Minute</span></h1>
+      </header>
+      <nav>
+        <a href="meeting_minute_video.mp4">Video of meeting</a>
+      </nav>
+      <section>
+        <h2><b>Date: 4/12/2024</b></h2>
 
-    <h3>What to discuss</h3>
-    <p>Discuss what each person do</p>
+        <hr />
 
-    <h3>What was discussed?</h3>
-    <p>what everyone does</p>
-    <img src="meeting_minute_diagram.png" alt="meeting minute diagram" />
+        <h2>Attendence</h2>
 
-    <h3>New business to be discussed</h3>
-    <p>where to start on our project</p>
+        <p>
+          Daniel <br />
+          John <br />
+          Sarah <br />
+          David
+        </p>
 
-    <h3>Comments/Questions/Concerns</h3>
-    <ul>
-      <li>we should arrive on time</li>
-      <li></li>
-    </ul>
-    <h4>Meeting Audio</h4>
-    <audio controls>
-      <source src="meeting_minute_audio.mp3" type="audio/mpeg" />
-    </audio>
-    <h4>Meeting Video</h4>
-    <video width="320" height="240" controls>
-      <source src="meeting_minute_video.mp4" type="video/mp4" />
-    </video>
-  </body>
+        <hr />
+
+        <h2>Location</h2>
+        <p>UCSD Price Center</p>
+      </section>
+
+      <section>
+        <details>
+          <summary>What to discuss</summary>
+          <p>Discuss what each person do</p>
+        </details>
+      </section>
+
+      <section>
+        <h2>What was discussed?</h2>
+        <p>what everyone does</p>
+        <img src="meeting_minute_diagram.png" alt="meeting minute diagram" />
+      </section>
+
+      <section>
+        <h2>New business to be discussed</h2>
+        <ol>
+          <li>where to <i>start</i> on our project</li>
+          <li><strong>how should we communicate</strong></li>
+          <li>problems that may have occured during this week</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Comments/Questions/Concerns</h2>
+        <ul>
+          <li><em>we should arrive on time</em></li>
+          <li><em>we should communitcate more</em></li>
+        </ul>
+      </section>
+
+      <div class="vidnaud">
+        <h3>Meeting Audio</h3>
+        <audio controls>
+          <source src="meeting_minute_audio.mp3" type="audio/mpeg" />
+        </audio>
+        <h3>Meeting Video</h3>
+        <video width="320" height="240" controls>
+          <source src="meeting_minute_video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </body>
+    <form>
+      <fieldset>
+        <label for="favfood">What's your favorite food?</label>
+        <input list="foods" id="favfood" name="favfood" /><br />
+        <datalist id="foods">
+          <option value="noodles"></option>
+          <option value="pizza"></option>
+          <option value="burgers"></option>
+        </datalist>
+        <br />
+        <label for="favsport">What's your favorite sport?</label>
+        <textarea id="favsport" name="favsport" rows="5" col="50">
+My favorite sport is badminton.</textarea
+        >
+        <br />
+        <label for="favgame">What's your favorite major?</label>
+        <select name="favgame" id="favgame">
+          <option value="math">Math</option>
+          <option value="cse">Computer Science</option>
+        </select>
+        <button type="button">submit</button>
+      </fieldset>
+    </form>
+
+    <footer>
+      <h3>written by</h3>
+      <p>Daniel</p>
+    </footer>
+  </main>
 </html>
