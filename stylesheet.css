@@ -1,7 +1,7 @@
 
   h1 {
-    margin: auto, 150px, auto, 150px;
-    padding: auto, 50px, auto, 50px;
+    margin: auto 150px auto 150px;
+    padding: 50px 50px 50px 50px;
     border-style: double;
     border-radius: 10px;
     position:static;
@@ -136,4 +136,7 @@
   }
   .b9{
     grid-area: box9;
+  }
+  .exp{
+    color: color(display-p3 0.5 0.4 0.8 / 0.9)
   }
