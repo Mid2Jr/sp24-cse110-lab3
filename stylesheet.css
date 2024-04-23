@@ -137,3 +137,6 @@
   .b9{
     grid-area: box9;
   }
+  .exp{
+    background-color: black;
+  }
