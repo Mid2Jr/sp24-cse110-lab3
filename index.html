@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      :root {
+        --color-blue: #7fffee;
+      }
+      .element {
+        background-color: var(--color-blue, white);
+      }
+      .jacfont {
+        font-family: "Jacquard 12 Charted", system-ui;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .jerfont {
+        font-family: "Jersey 20", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
     <title>Meeting Minute 1</title>
     <meta charset="UTF-8" />
     <meta name="description" content="Meeting Minutes" />
@@ -8,11 +26,26 @@
     <meta name="author" content="Daniel Luo" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jersey+20&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <header>
-        <h1><span style="color: red">First Meeting Minute</span></h1>
+        <h1>
+          <span style="color: red; font-size: 45px">First Meeting Minute</span>
+        </h1>
       </header>
       <nav>
         <a href="meeting_minute_video.mp4">Video of meeting</a>
@@ -20,38 +53,75 @@
       <section>
         <h2><b>Date: 4/12/2024</b></h2>
 
+        <div id="week">
+          <div class="nottoday">Monday</div>
+          <div class="nottoday">Tuesday</div>
+          <div class="nottoday">Wednesday</div>
+          <div class="nottoday">Thursday</div>
+          <div class="today">Friday</div>
+          <div class="nottoday">Saturday</div>
+          <div class="nottoday">Sunday</div>
+        </div>
+
         <hr />
 
-        <h2>Attendence</h2>
+        <h2 style="color: rgb(133, 19, 19); font-size: 27pt" target="pink">
+          Attendence
+        </h2>
+        <!--color with rgb-->
 
-        <p>
+        <p style="color: #000080; font-size: 1.5em; margin-bottom: 2vh">
+          <!--color with hex codes-->
           Daniel <br />
           John <br />
           Sarah <br />
           David
         </p>
 
+        <p class="p">Click Here If You Are Having A Great Time</p>
+        <button class="herebtn">Here</button>
+
         <hr />
 
-        <h2>Location</h2>
+        <h2 class="jerfont" style="color: hsl(350, 100, 88)">Location</h2>
         <p>UCSD Price Center</p>
       </section>
 
       <section>
         <details>
-          <summary>What to discuss</summary>
-          <p>Discuss what each person do</p>
+          <summary style="color: color(display-p3 1 0.5 0)">
+            What to discuss
+          </summary>
+          <p
+            class="jacfont"
+            style="color: color-mix(in lch, rgb(55, 38, 55) 40%, pink)"
+          >
+            <!--color using color mix-->
+            Discuss what each person do
+          </p>
         </details>
       </section>
 
       <section>
-        <h2>What was discussed?</h2>
-        <p>what everyone does</p>
+        <h2 class="jacfont" target="pink">What was discussed?</h2>
+        <p class="textstyle" style="padding: 1vw">what everyone does</p>
         <img src="meeting_minute_diagram.png" alt="meeting minute diagram" />
+        <p>Let's play tic tac toe</p>
+        <div class="container">
+          <div class="b1">x</div>
+          <div class="b2">o</div>
+          <div class="b3">x</div>
+          <div class="b4">x</div>
+          <div class="b5">x</div>
+          <div class="b6">o</div>
+          <div class="b7">o</div>
+          <div class="b8">x</div>
+          <div class="b9">o</div>
+        </div>
       </section>
 
       <section>
-        <h2>New business to be discussed</h2>
+        <h2 class="jerfont">New business to be discussed</h2>
         <ol>
           <li>where to <i>start</i> on our project</li>
           <li><strong>how should we communicate</strong></li>
@@ -68,7 +138,7 @@
       </section>
 
       <div class="vidnaud">
-        <h3>Meeting Audio</h3>
+        <h3 style="font-size: 2pc">Meeting Audio</h3>
         <audio controls>
           <source src="meeting_minute_audio.mp3" type="audio/mpeg" />
         </audio>
@@ -102,7 +172,7 @@ My favorite sport is badminton.</textarea
         </fieldset>
       </form>
       <section>
-        <h2>Validation</h2>
+        <h2 target="pink">Validation</h2>
         <img
           src="screenshots/validator_screeshot.png"
           alt="validator screenshots"
@@ -110,8 +180,8 @@ My favorite sport is badminton.</textarea
       </section>
 
       <footer>
-        <h3>written by</h3>
-        <p>Daniel</p>
+        <h3 class="sigtitle">written by</h3>
+        <p class="name">Daniel</p>
       </footer>
     </main>
   </body>

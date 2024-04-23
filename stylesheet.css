@@ -1,0 +1,139 @@
+
+  h1 {
+    margin: auto, 150px, auto, 150px;
+    padding: auto, 50px, auto, 50px;
+    border-style: double;
+    border-radius: 10px;
+    position:static;
+  }
+  h2, h3 {
+    background-color: rgb(200, 200, 110);
+    display: inline;
+    max-width: 250px;
+    max-width: 250px;
+    position: sticky;
+    top:-1px;
+  }
+  h3~p{
+    color: navy;
+  }
+  h2[target="pink"]{
+    background-color: rgb(255, 161, 239);
+    display: inline;
+    max-width: 250px;
+    max-width: 250px;
+    position: sticky;
+    top:-1px;
+  }
+  * {
+    color: black;
+  }
+  div h3 {
+    color:blueviolet;
+  }
+  h2+p{
+    color:brown;
+  }
+  p.name{
+    background-color: yellowgreen;
+    display: inline;
+  }
+  ol:has(li){
+    background-color: yellow;
+  }
+  ul{
+    color:blueviolet
+    & li{
+      background-color: aqua;
+    }
+  }
+@media screen and (min-width: 450px){
+  .p {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: aquamarine;
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+  }
+}
+  .textstyle {
+    text-decoration: underline red;
+    text-align: start;
+  }
+  .herebtn{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(255, 96, 39);
+  }
+  .herebtn:hover{
+    background-color: rgb(247, 195, 175);
+  }
+  .herebtn:active{
+    color:rgb(255, 68, 0); 
+    box-shadow: 2px 2px 5px rgb(71, 19, 0);
+  }
+  #week{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nottoday{
+    width: 100px;
+    height: 70px;
+    background-color: aliceblue;
+  }
+  .today{
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      'box1 box2 box3'
+      'box4 box5 box6'
+      'box7 box8 box9';
+    
+  }
+  .container > div{
+    background-color: rgb(136, 195, 237);
+  }
+  .b1{
+    grid-area: box1;
+  }
+  .b2{
+    grid-area: box2;
+  }
+  .b3{
+    grid-area: box3;
+  }
+  .b4{
+    grid-area: box4;
+  }
+  .b5{
+    grid-area: box5;
+  }
+  .b6{
+    grid-area: box6;
+  }
+  .b7{
+    grid-area: box7;
+  }
+  .b8{
+    grid-area: box8;
+  }
+  .b9{
+    grid-area: box9;
+  }
